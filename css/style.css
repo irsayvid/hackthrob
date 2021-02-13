@@ -1337,8 +1337,6 @@ footer .copy-right {
 
 @media (max-width: 1100px) {
 }
-<<<<<<< HEAD
-=======
 
 /* Login styles */
 
@@ -1350,7 +1348,6 @@ footer .copy-right {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: pink;
 }
 
 .auth-container #loginForm {
@@ -1367,4 +1364,3 @@ footer .copy-right {
   justify-content: center;
   align-items: center;
 }
->>>>>>> 1cc40e678959fc9c9f917ca81019f0e2d9cd985f
