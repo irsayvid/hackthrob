@@ -14,10 +14,11 @@
   <!-- Styles -->
   <!-- Bootstrap CSS -->
   <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/bootstrap.css">
   <!-- Animate CSS -->
   <link href="/public/css/animate.min.css" rel="stylesheet">
   <!-- Basic stylesheet -->
-  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="/public/css/owl.carousel.css">
   <!-- Font awesome CSS -->
   <link href="/public/css/font-awesome.min.css" rel="stylesheet">
   <!-- Custom CSS -->
@@ -28,26 +29,26 @@
   <link rel="shortcut icon" href="img/logo/favicon.ico">
 </head>
 <style>
+  body {
+    background: url("/img/login/Background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
-  body{
-  background: url("/public/img/login/Background.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+  .navbar {
+    background: rgba(255, 255, 255, 0.0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0.0px);
+    -webkit-backdrop-filter: blur(0.0px);
+  }
 
-.navbar{
-  background: rgba( 255, 255, 255, 0.0 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 0.0px );
--webkit-backdrop-filter: blur( 0.0px );
-}
-
-.form-control{
-  border-radius: 5px !important;
-}
+  .form-control {
+    border-radius: 5px !important;
+  }
 </style>
+
 <body>
   <div class="form-content auth-container">
     <header>
@@ -61,12 +62,12 @@ backdrop-filter: blur( 0.0px );
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-						<a class="my-auto align-middle" href="#">
-							<img src="/public/img/logo/l.png" width="50" height="50" alt="">
-						</a>
-						<a href="#banner" class="" style="font-size:3em;">
-							TuneLove
-						</a>
+            <a class="my-auto align-middle" href="#">
+              <img src="public/img/logo/l.png" width="50" height="50" alt="">
+            </a>
+            <a href="#banner" class="" style="font-size:3em;">
+              TuneLove
+            </a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -263,6 +264,7 @@ backdrop-filter: blur( 0.0px );
   <script src="/public/js/jquery.js"></script>
   <!-- Bootstrap JS -->
   <script src="/public/js/bootstrap.min.js"></script>
+  <script src="/public/js/bootstrap.js"></script>
   <!-- WayPoints JS -->
   <script src="/public/js/waypoints.min.js"></script>
   <!-- Include js plugin -->
