@@ -26,54 +26,31 @@
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/logo/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
 <body>
 
 	<!-- modal for booking ticket form -->
-	<div class="modal fade" id="bookTicket" tabindex="-1" role="dialog" aria-labelledby="BookTicket">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade" id="generateId" tabindex="-1" role="dialog" aria-labelledby="BookTicket">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-							aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Name of The Event &nbsp; <small><span
-								class="label label-success">Available</span> &nbsp; <span class="label label-danger">Not
-								Available</span></small></h4>
+					<h5 class="modal-title" id="exampleModalLongTitle">Your Unique Id</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
-				<!-- form for events ticket booking -->
-				<form>
-					<div class="modal-body">
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputContact">Contact</label>
-							<input type="text" class="form-control" id="exampleInputContact" placeholder="+91 55 5555 5555">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputSeats">Number of Tickets</label>
-							<select class="form-control" id="exampleInputSeats">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> I accept the Terms of Service
-							</label>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<!-- link to payment gatway here -->
-						<button type="button" class="btn btn-primary">Book Now</button>
-					</div>
-				</form>
+				<div class="modal-body" style="display: flex; justify-content: space-between; align-items: center;">
+					<p id="unique-id"></p>
+					<a id="copy-icon" type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+						title="Click to copy">
+						<i class=" far fa-copy" style="font-size: 2.5rem;"></i>
+					</a>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -83,24 +60,7 @@
 
 		<!-- header area -->
 		<header>
-			<!-- secondary menu -->
-			<!-- <nav class="secondary-menu">
-				<div class="container">
-					<div class="sm-left">
-						<strong>Phone</strong>:&nbsp; <a href="#">555 555 555</a>&nbsp;&nbsp;&nbsp;&nbsp;
-						<strong>E-mail</strong>:&nbsp; <a href="#">music.site@melodi.com</a>
-					</div>
-					<div class="sm-right">
-						<div class="sm-social-link">
-							<a class="h-facebook" href="#"><i class="fa fa-facebook"></i></a>
-							<a class="h-twitter" href="#"><i class="fa fa-twitter"></i></a>
-							<a class="h-google" href="#"><i class="fa fa-google-plus"></i></a>
-							<a class="h-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</nav> -->
+			</nav>
 			<!-- primary menu -->
 			<nav class="navbar navbar-fixed-top navbar-default">
 				<div class="container">
@@ -123,7 +83,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#latestalbum">Latest Album</a></li>
-							<li><a href="#featuredalbum">Featured Album</a></li>
+							<li><a href="#people">Find people</a></li>
 							<li><a href="#contact">Contact</a></li>
 							<li><a href="login.html">Login</a></li>
 							<li><a href="signup.html">Signup</a></li>
@@ -378,36 +338,22 @@
 		<!--/ promo end -->
 
 		<!-- featured abbum -->
-		<div class="featured pad" id="featuredalbum">
+		<div class="featured pad" id="people">
 			<div class="container">
-				<!-- default heading -->
 				<div class="default-heading">
-					<!-- heading -->
-					<h2>Featured Album</h2>
+					<h2>Find People</h2>
 				</div>
-				<!-- featured album elements -->
 				<div class="featured-element">
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
-							<!-- featured item -->
 							<div class="featured-item ">
-								<!-- image container -->
 								<div class="figure">
-									<!-- image -->
 									<img class="img-responsive" src="img/featured/1.jpg" alt="" />
-									<!-- paragraph -->
 									<p>There are many variations of passages available, but the majority have suffered Lorem alteration in
 										some form, by injected look even slightly believable.</p>
 								</div>
-								<!-- featured information -->
-								<div class="featured-item-info">
-									<!-- featured title -->
-									<h4>Power Pop</h4>
-									<!-- horizontal line -->
-									<hr />
-									<!-- some responce from social medial or web likes -->
-									<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span
-											class="label label-theme">Love</span></p>
+								<div class="featured-item-info text-center mt-5" style="margin-top: 2rem;">
+									<button class="btn btn-danger">Connect</button>
 								</div>
 							</div>
 						</div>
@@ -423,14 +369,8 @@
 										some form, by injected look even slightly believable.</p>
 								</div>
 								<!-- featured information -->
-								<div class="featured-item-info">
-									<!-- featured title -->
-									<h4>Bad Brains</h4>
-									<!-- horizontal line -->
-									<hr />
-									<!-- some responce from social medial or web likes -->
-									<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span
-											class="label label-theme">Love</span></p>
+								<div class="featured-item-info text-center mt-5" style="margin-top: 2rem;">
+									<button class="btn btn-danger">Connect</button>
 								</div>
 							</div>
 						</div>
@@ -446,14 +386,8 @@
 										some form, by injected look even slightly believable.</p>
 								</div>
 								<!-- featured information -->
-								<div class="featured-item-info">
-									<!-- featured title -->
-									<h4>The Mars Volta</h4>
-									<!-- horizontal line -->
-									<hr />
-									<!-- some responce from social medial or web likes -->
-									<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span
-											class="label label-theme">Love</span></p>
+								<div class="featured-item-info text-center mt-5" style="margin-top: 2rem;">
+									<button class="btn btn-danger">Connect</button>
 								</div>
 							</div>
 						</div>
@@ -469,14 +403,8 @@
 										some form, by injected look even slightly believable.</p>
 								</div>
 								<!-- featured information -->
-								<div class="featured-item-info">
-									<!-- featured title -->
-									<h4>Dirty Dancing</h4>
-									<!-- horizontal line -->
-									<hr />
-									<!-- some responce from social medial or web likes -->
-									<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span
-											class="label label-theme">Love</span></p>
+								<div class="featured-item-info text-center mt-5" style="margin-top: 2rem;">
+									<button class="btn btn-danger">Connect</button>
 								</div>
 							</div>
 						</div>
@@ -492,14 +420,8 @@
 										some form, by injected look even slightly believable.</p>
 								</div>
 								<!-- featured information -->
-								<div class="featured-item-info">
-									<!-- featured title -->
-									<h4>Hotel California</h4>
-									<!-- horizontal line -->
-									<hr />
-									<!-- some responce from social medial or web likes -->
-									<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span
-											class="label label-theme">Love</span></p>
+								<div class="featured-item-info text-center mt-5" style="margin-top: 2rem;">
+									<button class="btn btn-danger">Connect</button>
 								</div>
 							</div>
 						</div>
@@ -515,14 +437,8 @@
 										some form, by injected look even slightly believable.</p>
 								</div>
 								<!-- featured information -->
-								<div class="featured-item-info">
-									<!-- featured title -->
-									<h4>Punk Compilation</h4>
-									<!-- horizontal line -->
-									<hr />
-									<!-- some responce from social medial or web likes -->
-									<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span
-											class="label label-theme">Love</span></p>
+								<div class="featured-item-info text-center mt-5" style="margin-top: 2rem;">
+									<button class="btn btn-danger">Connect</button>
 								</div>
 							</div>
 						</div>
@@ -540,16 +456,17 @@
 					<div class="row">
 						<div class="col-md-9 col-sm-8">
 							<!-- heading -->
-							<h3>Melodi, A Fully Rock Album Pro</h3>
+							<h3>Connect with music</h3>
 							<!-- paragraph -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim sectetur adipiscing elit, sed do eiusmod tempoad minim veniam consequat.
+							<p>generate a unique id by clicking the button and listen to songs together
 							</p>
 						</div>
 						<div class="col-md-3 col-sm-4">
 							<div class="cta-btn text-center">
 								<!-- purchase now button -->
-								<a href="#" class="btn btn-default btn-lg">Download Now</a>
+								<a href="#" id="gen-id-btn" class="btn btn-default btn-lg" data-toggle="modal"
+									data-target="#generateId">Genrerate
+									Id</a>
 							</div>
 						</div>
 					</div>
