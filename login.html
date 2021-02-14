@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Melodi</title>
+  <title>TuneLove</title>
   <!-- Description, Keywords and Author -->
   <meta name="description" content="Your description">
   <meta name="keywords" content="Your,Keywords">
@@ -13,20 +13,40 @@
 
   <!-- Styles -->
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/bootstrap.css">
   <!-- Animate CSS -->
-  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="/public/css/animate.min.css" rel="stylesheet">
   <!-- Basic stylesheet -->
-  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="/public/css/owl.carousel.css">
   <!-- Font awesome CSS -->
-  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="/public/css/font-awesome.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-color.css" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet">
+  <link href="/public/css/style-color.css" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/logo/favicon.ico">
 </head>
+
+<style>
+  
+body{
+  background: url("/public/img/login/Background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar{
+  background: rgba( 255, 255, 255, 0.0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px );
+}
+
+</style>
 
 <body>
   <div class="form-content auth-container">
@@ -41,9 +61,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="/#home">
-              TuneLove
-            </a>
+						<a class="my-auto align-middle" href="#">
+							<img src="/public/img/logo/l.png" width="50" height="50" alt="">
+						</a>
+						<a href="#banner" class="" style="font-size:3em;">
+							TuneLove
+						</a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -65,16 +88,16 @@
         <div class="col-12">
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" style="border-radius: 5px !important;">
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" style="border-radius: 5px !important;">
           </div>
         </div>
       </div>
       <div class="text-center">
-        <button type="submit" class="btn btn-lg btn-theme">Login</button>
+        <button type="submit" class="btn btn-lg btn-theme" style="border-radius:5px !important">Login</button>
       </div>
     </form>
 
@@ -83,21 +106,22 @@
 
   <!-- Javascript files -->
   <!-- jQuery -->
-  <script src="js/jquery.js"></script>
+  <script src="/public/js/jquery.js"></script>
   <!-- Bootstrap JS -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="/public/js/bootstrap.min.js"></script>
+  <script src="/public/js/bootstrap.js"></script>
   <!-- WayPoints JS -->
-  <script src="js/waypoints.min.js"></script>
+  <script src="/public/js/waypoints.min.js"></script>
   <!-- Include js plugin -->
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="/public/js/owl.carousel.min.js"></script>
   <!-- One Page Nav -->
-  <script src="js/jquery.nav.js"></script>
+  <script src="/public/js/jquery.nav.js"></script>
   <!-- Respond JS for IE8 -->
-  <script src="js/respond.min.js"></script>
+  <script src="/public/js/respond.min.js"></script>
   <!-- HTML5 Support for IE -->
-  <script src="js/html5shiv.js"></script>
+  <script src="/public/js/html5shiv.js"></script>
   <!-- Custom JS -->
-  <script src="js/custom.js"></script>
+  <script src="/public/js/custom.js"></script>
 </body>
 
 </html>
